@@ -1,0 +1,127 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.input-section {
+    width: 300px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    overflow-y: auto;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.title h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.title p {
+    font-size: 14px;
+    color: #777;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.input-group label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.input-group input[type="text"],
+.input-group input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.input-group input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.input-group input[type="number"] {
+    width: 80px;
+    margin-left: 10px;
+}
+
+.add-button,
+.calculate-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-button {
+    background-color: #007bff;
+}
+
+.add-button:hover {
+    background-color: #0056b3;
+}
+
+.calculate-button {
+    background-color: #28a745;
+}
+
+.calculate-button:hover {
+    background-color: #1e7e34;
+}
+
+#map {
+    flex: 1;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.max-passengers-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.max-passengers-container input[type="number"] {
+    margin-right: 5px;
+}
+
+#error-container {
+    color: red;
+}

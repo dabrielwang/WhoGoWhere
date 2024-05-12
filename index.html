@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WhoGoWhere</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    </head>
+    <body onload="addDriver(); addPassenger();">
+        <div class="container">
+            <div class="input-section">
+                <div class="title">
+                    <h1>WhoGoWhere</h1>
+                    <p>Effortlessly plan your shared rides and optimize routes.</p>
+                </div>
+                <div class="input-group">
+                    <h2>Drivers</h2>
+                    <div id="driverInputs">
+                        <div></div>
+                    </div>
+                    <button class="add-button" onclick="addDriver()">Add Another Driver</button>
+                </div>
+                <div class="input-group">
+                    <h2>Passengers</h2>
+                    <div id="passengerInputs">
+                        <div></div>
+                    </div>
+                    <button class="add-button" onclick="addPassenger()">Add Another Passenger</button>
+                </div>
+                <div class="input-group">
+                    <label for="destination">Destination:</label>
+                    <input type="text" id="destination" placeholder="Enter destination">
+                </div>
+                <button class="calculate-button" onclick="calculateRoute()">Calculate Route</button>
+                <div id="route-links-container"></div>
+                <div id="error-container"></div>
+            </div>
+            <div id="map"></div>
+        </div>
+        <script src="script.js"></script>
+        <script src="config.js"></script>
+        <script>
+            var script = document.createElement('script');
+            script.src = "https://maps.googleapis.com/maps/api/js?key=" + apiKey + "&libraries=places&callback=initMap";
+            document.body.appendChild(script);
+        </script>
+    </body>
+</html>
